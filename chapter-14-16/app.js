@@ -137,3 +137,12 @@ document.write("<br>")
 document.write("<br>")
 document.write("<br>")
 document.write("<br>")
+
+// Q#15
+var phoneArray=["Apple","Motorola","Nokia","Sony","Haier"];
+var size=phoneArray.length;
+for(var i=0;i<size;i++)
+{
+    document.write(phoneArray[i]+"<br>");
+}
+
