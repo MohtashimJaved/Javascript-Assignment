@@ -1,14 +1,23 @@
 // Q#1
-// var question = prompt ("Enter any Number or Character")
+var num = prompt ("Enter the number or string");
 
+if (num.charCodeAt(0) >= 65 && num.charCodeAt(0) <= 90)
+{
+    alert ("It is the upper case letter")
+}
+else if (num.charCodeAt(0) >= 97 && num.charCodeAt(0)<= 122)
+{
+    alert ("It is the lower case letter");
+}
+else if (num.charCodeAt() >= 48 && num.charCodeAt() <= 57)
+{
+    alert("Its an number");
+}
+else
+{
+    alert("It is something else");
+}
 
-// if (question >= 65 && question <= 90 ) {
-//     alert ("Uppercase")
-// }else if (question >= 97 && question <= 122) {
-//     alert ("Lowercase")
-// }else if (question >= 48 && question <= 55) {
-//     alert ("Number")    
-// }
 
 // Q#2
 
