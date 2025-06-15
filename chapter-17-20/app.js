@@ -73,23 +73,57 @@ document.write("<br/>")
 document.write("<br/>")
 
 // Q#7
-// var bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"]
-// var userSearch = prompt("Welcome to ABC bakery what do you want sir/ma'm ?")
-// for (var i = 0; i < bakeryItems.length; i++) {
-//     if (userSearch == bakeryItems[i]) {
-//         alert (userSearch + " is available at index " + i + " in our bakery")
-//     }
-//     else {
-//          alert ("We are sorry " + userSearch + " is not available in our bakery");
-//     }
+var bakeryItems = ["cake", "apple pie", "cookie", "chips", "patties"]
+var userSearch = prompt("Welcome to ABC bakery what do you want sir/ma'm ?")
+for (var i = 0; i < bakeryItems.length; i++) {
+    if (userSearch == bakeryItems[i]) {
+        alert(userSearch + " is available at index " + i + " in our bakery")
+        break
+    }
+    if (userSearch != bakeryItems) {
+        alert("We are sorry " + userSearch + " is not available in our bakery");
+        break
+    }
     
-// }
+}
+// Q#8
+var q8 = [24, 53, 78, 91, 12];
+var max = 0;
+
+document.write("Array Items:   " + q8);
+document.write("<br/>")
+
+for (var i = 0; i < q8.length; i++) {
+    if (max < q8[i]) {
+        max = q8[i];
+    }
+}
+document.write("The largest number is " + max)
+document.write("<br/>")
+document.write("<br/>")
+document.write("<br/>")
+
+// Q#9
+var q9 = [24, 53, 78, 91, 12];
+var min = q9[0];
+
+document.write("Array Items:   " + q9);
+document.write("<br/>")
+
+for (var i = 0; i < q9.length; i++) {
+    if (min > q9[i]) {
+        min = q9[i];
+    }
+}
+document.write("The Smallest number is " + min)
+document.write("<br/>")
+document.write("<br/>")
+document.write("<br/>")
+
 
 // Q#10
-for (var i = 1; i <= 100; i++)
-{
-    if(i %= 5 == 0)
-    {
+for (var i = 1; i <= 100; i++) {
+    if (i %= 5 == 0) {
         document.write(i + " , ");
     }
 }
